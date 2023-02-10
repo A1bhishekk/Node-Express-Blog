@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- include head.ejs -->
+    <%- include('partials/head.ejs') %>
+    <title>Technical Abhi Blog</title>
+</head>
+<body>
+    <!-- include nav.ejs -->
+    <%- include('partials/nav.ejs') %>
+
+  <!-- <%= JSON.stringify(blogs) %> -->
+  <div class="container mt-3">
+    <% blogs.forEach(blog => { %>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="<%=blog.coverImageURL %>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%=blog.title %></h5>
+          <p class="card-text"><%=blog.body %></p>
+          <a href="/blog/<%=blog._id %>" class="btn btn-danger">View</a>
+        </div>
+      </div>
+  
+    <% }) %>
+  </div>
+
+
+
+    <!-- include scripts.ejs -->
+    <%- include('partials/scripts.ejs') %>
+</body>
+</html>
