@@ -1,5 +1,5 @@
 import JWT from 'jsonwebtoken';
-const secret='mysecret'
+const secret='ksbhfjdjfdfdjnikfdskksnbkdbn'
 
 function createTokenForUser(user){
     const payload={
@@ -9,7 +9,7 @@ function createTokenForUser(user){
         profileImageURL:user.profileImageURL
     }
 
-    const token=JWT.sign(payload,secret,{expiresIn:'1d'});
+    const token=JWT.sign(payload,secret,{expiresIn:'15d'});
     return token;
 
 }
