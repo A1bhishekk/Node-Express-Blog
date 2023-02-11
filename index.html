@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blog-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blog-container .blog{
+            width: 80%;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .blog-container .blog img{
+            width: 100%;
+            border: 2px solid black;
+            align-self: center;
+        }
+        .blog-container .blog .comment{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px;
+        }
+        .blog-container .blog .comment img{
+            border-radius: 50%;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+    <div class="blog">
+        <h1>This is Title</h1>
+        <img src="./public/uploads/1676084314749-dps.jpg" alt="">
+        <h3>Abhishek Kumar</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas beatae vitae dignissimos quod numquam aut, dolorem libero aspernatur perferendis.
+        </p>
+
+        <hr>
+
+        <h2>Comments (3)</h2>
+        <div class="comment">
+            <img src="./public/uploads/1676099496847-milaptop.jpg" alt="" width="50px">
+            <h3>Abhishek Kumar</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas beatae vitae dignissimos quod numquam aut, dolorem libero aspernatur perferendis.
+            </p>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

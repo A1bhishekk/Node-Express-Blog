@@ -19,7 +19,7 @@
           <img class="card-img-top" src="<%=blog.coverImageURL %>" alt="Card image cap" width="100%" height="300">
           <div class="card-body">
             <h5 class="card-title"><%=blog.title %></h5>
-            <p class="card-text"><%=blog.body %></p>
+            <p class="card-text"><%=blog.body.slice(0,50) %>...</p>
             <a href="/blog/<%=blog._id %>" class="btn btn-danger">View</a>
           </div>
         </div>
