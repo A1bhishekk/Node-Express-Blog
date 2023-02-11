@@ -73,7 +73,7 @@ router.post('/comment/:blogId',async (req,res)=>{
 // delete blog 
 
 router.delete('/:id',async (req,res)=>{
-    console.log(req.params.id)
+    // console.log(req.params.id)
     await Blog.findByIdAndDelete(req.params.id); 
     return res.redirect('/');
 })
